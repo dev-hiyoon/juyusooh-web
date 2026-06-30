@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주유소오 개인정보처리방침</title>
+<meta name="description" content="주유소오(juyusooh) 앱 개인정보처리방침">
+<style>
+  :root { --blue:#0068C8; --ink:#1a1a1a; --muted:#666; --line:#e5e7eb; --bg:#f8fafc; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; color:var(--ink); background:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.7; word-break:keep-all;
+  }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  header { border-bottom:3px solid var(--blue); padding-bottom:16px; margin-bottom:28px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  .badge { display:inline-block; font-size:.8rem; color:var(--blue); font-weight:600; }
+  .meta { color:var(--muted); font-size:.85rem; margin-top:6px; }
+  h2 { font-size:1.15rem; margin:34px 0 10px; padding-top:6px; }
+  h2 .num { color:var(--blue); }
+  p, li { font-size:.97rem; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.9rem; }
+  th, td { border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; }
+  th { background:var(--bg); font-weight:600; }
+  .note { background:var(--bg); border-left:4px solid var(--blue); padding:12px 16px; border-radius:6px; margin:16px 0; font-size:.92rem; }
+  a { color:var(--blue); }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+  strong { font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">⛽ 주유소오 (juyusooh)</span>
+    <h1>개인정보처리방침</h1>
+    <div class="meta">시행일: 2026-06-30</div>
+  </header>
+
+  <p><strong>주유소오</strong>(이하 "본 앱")는 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 방침은 본 앱이 어떤 정보를 어떤 목적으로 처리하는지 설명합니다.</p>
+  <p>본 앱은 <strong>회원가입이 없으며, 이름·전화번호·이메일 등 이용자를 직접 식별하는 정보를 수집하지 않습니다.</strong></p>
+
+  <h2><span class="num">1.</span> 수집하는 정보와 이용 목적</h2>
+  <table>
+    <thead><tr><th>항목</th><th>수집 방식</th><th>이용 목적</th><th>보관 위치</th></tr></thead>
+    <tbody>
+      <tr><td><strong>위치정보(정밀 GPS)</strong></td><td>이용자가 권한 허용 시, 앱 사용 중에만</td><td>현위치 기준 반경 내 주유소 검색·가격 조회·길안내</td><td><strong>기기 내에서만 처리</strong>, 서버에 저장하지 않음</td></tr>
+      <tr><td><strong>익명 인증 식별자</strong></td><td>Firebase 익명 인증이 자동 발급</td><td>공유 리뷰의 작성·수정·삭제 권한 식별(중복·도용 방지)</td><td>Google Firebase</td></tr>
+      <tr><td><strong>리뷰 정보(별점·한줄평·닉네임·작성일시)</strong></td><td>이용자가 리뷰 작성 시</td><td>모든 이용자가 함께 보는 주유소 평점 제공</td><td>Google Firebase</td></tr>
+      <tr><td><strong>닉네임</strong></td><td>이용자가 직접 설정(미설정 시 임의 배정)</td><td>리뷰 표시명</td><td>Google Firebase</td></tr>
+      <tr><td><strong>차계부 기록(주유 일자·유종·단가·금액·주유량)</strong></td><td>이용자가 직접 입력</td><td>개인 주유 내역·월별 통계 제공</td><td><strong>기기 로컬 저장소에만 보관</strong>(서버 전송 없음)</td></tr>
+    </tbody>
+  </table>
+  <div class="note">위치정보와 차계부는 <strong>기기에서만 처리·보관</strong>되며 본 앱 서버나 제3자로 전송되지 않습니다. 단, 위치 좌표는 주유소 검색을 위해 아래 4항의 외부 서비스(오피넷·지도)에 <strong>질의 시점에 전송</strong>됩니다.</div>
+
+  <h2><span class="num">2.</span> 위치정보의 이용</h2>
+  <ul>
+    <li>본 앱은 <strong>앱 사용 중에만(foreground)</strong> 위치를 사용하며, 백그라운드에서 위치를 추적하지 않습니다.</li>
+    <li>위치 권한은 선택이며, 거부 시 현위치 기반 검색만 제한되고 그 외 기능은 이용할 수 있습니다.</li>
+    <li>수집한 위치는 주유소 검색·정렬·길안내 목적 외로 사용하지 않으며, 별도로 저장하지 않습니다.</li>
+  </ul>
+
+  <h2><span class="num">3.</span> 보유 및 파기</h2>
+  <ul>
+    <li><strong>위치정보·차계부</strong>: 기기에만 존재하며, 앱 삭제 시 함께 삭제됩니다.</li>
+    <li><strong>리뷰·익명 식별자</strong>: 이용자가 앱 내에서 리뷰를 삭제하면 해당 리뷰가 삭제됩니다. 익명 식별자는 서비스 운영에 필요한 기간 동안 보관 후 파기합니다.</li>
+    <li>이용자는 언제든지 앱 내에서 본인이 작성한 리뷰를 수정·삭제할 수 있습니다.</li>
+  </ul>
+
+  <h2><span class="num">4.</span> 제3자 서비스(처리 위탁)</h2>
+  <p>본 앱은 아래 외부 서비스를 이용하며, 기능 제공에 필요한 최소한의 정보만 전달됩니다.</p>
+  <table>
+    <thead><tr><th>서비스</th><th>전달 정보</th><th>목적</th></tr></thead>
+    <tbody>
+      <tr><td><strong>한국석유공사 오피넷(Opinet) 공공 API</strong></td><td>위치 좌표·유종·반경</td><td>주유소·가격 데이터 조회</td></tr>
+      <tr><td><strong>Google Firebase</strong></td><td>익명 식별자·리뷰 데이터</td><td>인증·리뷰 저장 및 동기화</td></tr>
+      <tr><td><strong>네이버 클라우드 플랫폼 / 카카오 지도</strong></td><td>위치 좌표</td><td>인앱 지도 표시</td></tr>
+      <tr><td><strong>카카오내비·네이버지도·티맵(외부 길안내 앱)</strong></td><td>목적지 좌표</td><td>이용자가 길안내 실행 시 해당 앱으로 전달</td></tr>
+    </tbody>
+  </table>
+  <p>각 서비스는 자체 개인정보처리방침을 따릅니다.</p>
+
+  <h2><span class="num">5.</span> 이용자의 권리</h2>
+  <ul>
+    <li>이용자는 OS 설정에서 위치 권한을 언제든지 철회할 수 있습니다.</li>
+    <li>기기에 저장된 정보(차계부 등)는 앱 삭제로 전부 제거할 수 있습니다.</li>
+    <li>리뷰 관련 정보의 열람·수정·삭제는 앱 내 기능으로 가능합니다.</li>
+  </ul>
+
+  <h2><span class="num">6.</span> 아동의 개인정보</h2>
+  <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 해당 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+  <h2><span class="num">7.</span> 광고</h2>
+  <p>본 앱은 현재 광고를 게재하지 않습니다. 향후 광고를 도입할 경우, 광고 식별자 사용 여부를 포함해 본 방침을 갱신하고 사전에 고지합니다.</p>
+
+  <h2><span class="num">8.</span> 방침의 변경</h2>
+  <p>본 방침은 법령·서비스 변경에 따라 개정될 수 있으며, 변경 시 본 페이지를 통해 고지합니다.</p>
+
+  <h2><span class="num">9.</span> 문의처</h2>
+  <p>개인정보 관련 문의: <a href="mailto:dev.hiyoon@gmail.com">dev.hiyoon@gmail.com</a></p>
+
+  <footer>
+    주유소오(juyusooh) · 시행일 2026-06-30<br>
+    내 주변 가장 싼 주유소를, 열자마자.
+  </footer>
+</div>
+</body>
+</html>
